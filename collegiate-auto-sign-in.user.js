@@ -189,6 +189,16 @@ const CollegiateSettingsUI = (() => {
       outline-offset: 2px;
     }
     .gear svg { width: 1.1rem; height: 1.1rem; flex-shrink: 0; }
+    @media (max-width: 639px) {
+      .gear {
+        min-height: 36px;
+        min-width: 36px;
+        padding: 0.35rem;
+        gap: 0;
+      }
+      .gear svg { width: 0.95rem; height: 0.95rem; }
+      .gear-label { display: none; }
+    }
     .backdrop {
       position: fixed;
       inset: 0;

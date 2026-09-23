@@ -6,6 +6,8 @@ After you install it once on a device, open a supported login page and use **Set
 
 **Repository:** [github.com/techiebirb/CSNY-Auto-Sign-in-Userscript](https://github.com/techiebirb/CSNY-Auto-Sign-in-Userscript)
 
+> **Coming soon — browser extension (computer only):** A dedicated extension version for Mac and Windows is in the works. When it is released, we recommend using that version on desktop instead of this userscript—it will be simpler to install and update. This userscript remains the right choice for iPhone, iPad, and Android.
+
 ## What you need
 
 Click your row to jump to **install** steps (or use the **update** link if you already have the script).
