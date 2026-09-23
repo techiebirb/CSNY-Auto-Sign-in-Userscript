@@ -1,0 +1,8 @@
+{
+  "name": "collegiate-auto-sign-in",
+  "private": true,
+  "version": "2.0.1",
+  "scripts": {
+    "build": "node scripts/build-userscript.mjs"
+  }
+}
