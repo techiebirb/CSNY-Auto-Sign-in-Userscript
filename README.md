@@ -1,10 +1,10 @@
-# Collegiate Auto Sign-In
+# CSNY Auto Sign-in [Userscript Ver]
 
 This helper fills in parts of the Collegiate school login for you—your **email** on the Blackbaud portal and, when needed, your **CSNY OneLogin** username and password steps. You still type your **Blackbaud password** yourself on the next screen.
 
 After you install it once on a device, open a supported login page and use **Settings** (bottom-right corner) to save your school email and optional OneLogin password.
 
-**Repository:** [github.com/techiebirb/collegiateAutoSignIn](https://github.com/techiebirb/collegiateAutoSignIn)
+**Repository:** [github.com/techiebirb/CSNY-Auto-Sign-in-Userscript](https://github.com/techiebirb/CSNY-Auto-Sign-in-Userscript)
 
 ## What you need
 
@@ -26,7 +26,7 @@ Click your row to jump to **install** steps (or use the **update** link if you a
 
 Open this link in the browser where you installed Userscripts or Tampermonkey. When asked, confirm **Install** (or add/import the script):
 
-**[Install Collegiate Auto Sign-In](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)**
+**[Install CSNY Auto Sign-in [Userscript Ver]](https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js)**
 
 You can also download [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js) from this repo and import that file in Userscripts or Tampermonkey. If you use a downloaded file only, see [Update from a downloaded file](#update-imported-file) when a new version is published.
 
@@ -54,7 +54,7 @@ Pick the link that matches your device (same as the table above):
 1. Install **[Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887)** from the App Store.
 2. On your device, open **Settings → Safari → Extensions** and turn **Userscripts** on. Allow it on Collegiate sites when Safari asks.
 3. **Add the script from the install link:**
-   1. In **Safari**, tap the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)**. The page may look blank or show a lot of text—that’s normal; you’re looking at the script file.
+   1. In **Safari**, tap the **[install link](https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js)**. The page may look blank or show a lot of text—that’s normal; you’re looking at the script file.
    2. **Stay in Safari** on that page. Open **Userscripts** from Safari’s toolbar: tap the **puzzle piece** (extensions) next to the address bar, then tap **Userscripts**. A panel slides up from the bottom. (If you don’t see **Userscripts**, tap **Manage Extensions** and turn it on for this site.)
    3. In that panel, tap **Userscript detected: tap to install**.
    4. Scroll down if you need to, then tap **Install**.
@@ -68,7 +68,7 @@ Pick the link that matches your device (same as the table above):
 
 1. Install **[Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887)** from the Mac App Store.
 2. Open **Safari → Settings → Extensions**, enable **Userscripts**, and allow it on `collegiateschool.myschoolapp.com` and `csny.onelogin.com` when prompted.
-3. Open the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)** in Safari and add the script in Userscripts, or import [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js). See the [Userscripts macOS guide](https://github.com/quoid/userscripts) if you need import steps.
+3. Open the **[install link](https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js)** in Safari and add the script in Userscripts, or import [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js). See the [Userscripts macOS guide](https://github.com/quoid/userscripts) if you need import steps.
 4. Open a Collegiate login page in **Safari**. Click **Settings**, enter your details, and click **Save**. You should see **Settings saved.**
 
 The Userscripts *file* can sync between Apple devices if you use its sync options; your **Settings** email and password are still stored separately on each device and browser.
@@ -76,14 +76,14 @@ The Userscripts *file* can sync between Apple devices if you use its sync option
 ### <a id="install-desktop-tampermonkey"></a>Mac or Windows (Chrome, Edge, or Firefox)
 
 1. Install **[Tampermonkey](https://www.tampermonkey.net/)** for your browser (Chrome Web Store, Edge Add-ons, or Firefox Add-ons).
-2. Open the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)**. Confirm when Tampermonkey asks to install. Or use **Dashboard → Utilities → Import** with the downloaded file.
+2. Open the **[install link](https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js)**. Confirm when Tampermonkey asks to install. Or use **Dashboard → Utilities → Import** with the downloaded file.
 3. Open a login URL from the table above. Click **Settings**, fill in your details, and click **Save**. You should see **Settings saved.**
 
 ### <a id="install-android-edge"></a>Android (Microsoft Edge)
 
 1. Install **Microsoft Edge** from the Play Store if you do not already use it.
 2. In Edge, open the menu → **Extensions** → install and enable **Tampermonkey** (follow the in-app prompts).
-3. Open the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)** in Edge and confirm install in Tampermonkey.
+3. Open the **[install link](https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js)** in Edge and confirm install in Tampermonkey.
 4. Open a Collegiate login URL **in Edge** (not Chrome). Tap **Settings** on the page, enter your details, and tap **Save**.
 
 If you usually open school email links in Chrome, copy the link and open it in Edge instead—this helper does not run in Chrome on Android.
@@ -92,7 +92,7 @@ If you usually open school email links in Chrome, copy the link and open it in E
 
 1. Install **Firefox** from the Play Store and keep it updated (Tampermonkey is available in Firefox’s add-ons on recent versions).
 2. In Firefox, open the menu → **Add-ons** → install **Tampermonkey**.
-3. Open the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)** in Firefox and confirm install.
+3. Open the **[install link](https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js)** in Firefox and confirm install.
 4. Open a Collegiate login URL **in Firefox**. Tap **Settings**, enter your details, and tap **Save**.
 
 ## First-time setup on the login page
@@ -140,7 +140,7 @@ Your **Settings** (email and OneLogin password) usually stay on the device after
 
 ### <a id="update-tampermonkey"></a>Update with Tampermonkey (Chrome, Edge, Firefox; Android Edge / Firefox)
 
-Use this if you installed from the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)** in Tampermonkey.
+Use this if you installed from the **[install link](https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js)** in Tampermonkey.
 
 **Turn on automatic updates (recommended, once per browser):**
 
@@ -152,13 +152,13 @@ Use this if you installed from the **[install link](https://raw.githubuserconten
 **Update right now (manual):**
 
 1. Open Tampermonkey → **Dashboard**.
-2. Find **Collegiate Auto Sign-In** in the list.
+2. Find **CSNY Auto Sign-in [Userscript Ver]** in the list.
 3. Use **Check for userscript updates** from the Dashboard menu or toolbar, or open the script and look for an update notice—then confirm **Update** / **Install**.
 4. Reload any open Collegiate login tabs.
 
 **If no update appears but you know a new version was released:**
 
-1. In the same browser, open the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)** again.
+1. In the same browser, open the **[install link](https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js)** again.
 2. When Tampermonkey asks, choose **Reinstall** or **Update** (wording varies). That replaces the script with the current file on GitHub.
 3. Reload the login page.
 
@@ -168,15 +168,15 @@ Userscripts does not use Tampermonkey’s automatic update checker. Refresh the 
 
 **From the install link (same as first install):**
 
-1. In **Safari**, open the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)**.
+1. In **Safari**, open the **[install link](https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js)**.
 2. Open **Userscripts** from Safari’s extensions menu (puzzle piece → **Userscripts**).
-3. If you see **Userscript detected** or an update prompt, follow it to **Install** / replace the existing script. If you already have the script, open the **Scripts** list in Userscripts, select **Collegiate Auto Sign-In**, and use the option to update or reinstall from the open tab (exact labels depend on your Userscripts version).
+3. If you see **Userscript detected** or an update prompt, follow it to **Install** / replace the existing script. If you already have the script, open the **Scripts** list in Userscripts, select **CSNY Auto Sign-in [Userscript Ver]**, and use the option to update or reinstall from the open tab (exact labels depend on your Userscripts version).
 4. Close Userscripts (checkmark on iPhone/iPad) and reload the Collegiate login page in Safari.
 
 **From a file (AirDrop, iCloud, download):**
 
 1. Download the latest [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js) from this repo ( **Code → Download ZIP** or open the raw file and save it).
-2. In Userscripts, import the new file and replace the old **Collegiate Auto Sign-In** entry when prompted.
+2. In Userscripts, import the new file and replace the old **CSNY Auto Sign-in [Userscript Ver]** entry when prompted.
 3. Reload the login page in Safari.
 
 If you use Userscripts sync between Apple devices, updating the script on one device may sync the *script file*; **Settings** on each device are still separate—check **Settings** on the login page after an update if anything seems off.
@@ -198,9 +198,9 @@ Use this if you never used the online install link and only imported a copy of `
 - **Changed settings:** Reload the login page after saving **Settings**.
 - **New version on GitHub:** Follow [Updates](#updates) for your setup, then reload the login page.
 
-**Optional (someone technical helping you):** Open the browser’s developer console on the login page and look for messages starting with `[Collegiate Auto Sign-In]`.
+**Optional (someone technical helping you):** Open the browser’s developer console on the login page and look for messages starting with `[CSNY Auto Sign-in [Userscript Ver]]`.
 
-Still stuck? Open an issue on [GitHub](https://github.com/techiebirb/collegiateAutoSignIn/issues).
+Still stuck? Open an issue on [GitHub](https://github.com/techiebirb/CSNY-Auto-Sign-in-Userscript/issues).
 
 ## For developers
 

@@ -1,13 +1,13 @@
 // ==UserScript==
-// @name         Collegiate Auto Sign-In
-// @namespace    https://github.com/techiebirb/collegiateAutoSignIn
+// @name         CSNY Auto Sign-in [Userscript Ver]
+// @namespace    https://github.com/techiebirb/CSNY-Auto-Sign-in-Userscript
 // @version      2.0.3
 // @description  Auto-fills Collegiate Blackbaud and CSNY OneLogin sign-in steps.
 // @author       techiebirb
-// @homepageURL  https://github.com/techiebirb/collegiateAutoSignIn
-// @supportURL   https://github.com/techiebirb/collegiateAutoSignIn
-// @updateURL    https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js
-// @downloadURL  https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js
+// @homepageURL  https://github.com/techiebirb/CSNY-Auto-Sign-in-Userscript
+// @supportURL   https://github.com/techiebirb/CSNY-Auto-Sign-in-Userscript
+// @updateURL    https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js
+// @downloadURL  https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js
 // @match        https://collegiateschool.myschoolapp.com/*
 // @match        https://csny.onelogin.com/*
 // @grant        GM.getValue
@@ -298,7 +298,7 @@ const CollegiateSettingsUI = (() => {
     const gear = document.createElement("button");
     gear.type = "button";
     gear.className = "gear";
-    gear.setAttribute("aria-label", "Collegiate sign-in settings");
+    gear.setAttribute("aria-label", "CSNY sign-in settings");
     gear.innerHTML = `${gearIconSvg()}<span class="gear-label">Settings</span>`;
     gear.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -422,7 +422,7 @@ const CollegiateSettingsUI = (() => {
       <div class="panel" role="dialog" aria-modal="true" aria-labelledby="cas-title">
         <form class="panel-form" novalidate>
           <div class="panel-inner">
-            <h2 id="cas-title">Collegiate Auto Sign-In</h2>
+            <h2 id="cas-title">CSNY Auto Sign-in [Userscript Ver]</h2>
             <p class="welcome" hidden>Set your school email once; we'll fill login steps for you.</p>
             <p class="hint">
               Blackbaud (<code>collegiateschool.myschoolapp.com</code>): fills your email and optionally
@@ -554,7 +554,7 @@ function getSiteConfigForLocation(location) {
 }
 
 const CollegiateDom = (() => {
-  const LOG_PREFIX = "[Collegiate Auto Sign-In]";
+  const LOG_PREFIX = "[CSNY Auto Sign-in [Userscript Ver]]";
 
   function debug(...args) {
     console.debug(LOG_PREFIX, ...args);
@@ -942,7 +942,7 @@ function scheduleAutomation(settings) {
   automationChain = automationChain
     .then(() => runAutomation(settings))
     .catch((err) => {
-      console.debug("[Collegiate Auto Sign-In]", err);
+      console.debug("[CSNY Auto Sign-in [Userscript Ver]]", err);
     });
 }
 

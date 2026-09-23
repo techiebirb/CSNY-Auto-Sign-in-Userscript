@@ -40,7 +40,7 @@ Tampermonkey users who installed from the published script URL will receive upda
 
 Published install URL (must match the header in the built file):
 
-`https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js`
+`https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/collegiate-auto-sign-in.user.js`
 
 ## Customize selectors
 

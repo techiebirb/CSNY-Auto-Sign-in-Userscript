@@ -6,13 +6,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 SCRIPT_URL = (
-    "https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/"
+    "https://raw.githubusercontent.com/techiebirb/CSNY-Auto-Sign-in-Userscript/main/"
     "collegiate-auto-sign-in.user.js"
 )
-REPO_URL = "https://github.com/techiebirb/collegiateAutoSignIn"
+REPO_URL = "https://github.com/techiebirb/CSNY-Auto-Sign-in-Userscript"
 
 HEADER = f"""// ==UserScript==
-// @name         Collegiate Auto Sign-In
+// @name         CSNY Auto Sign-in [Userscript Ver]
 // @namespace    {REPO_URL}
 // @version      2.0.3
 // @description  Auto-fills Collegiate Blackbaud and CSNY OneLogin sign-in steps.

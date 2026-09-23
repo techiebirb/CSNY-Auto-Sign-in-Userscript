@@ -261,7 +261,7 @@ function scheduleAutomation(settings) {
   automationChain = automationChain
     .then(() => runAutomation(settings))
     .catch((err) => {
-      console.debug("[Collegiate Auto Sign-In]", err);
+      console.debug("[CSNY Auto Sign-in [Userscript Ver]]", err);
     });
 }
 

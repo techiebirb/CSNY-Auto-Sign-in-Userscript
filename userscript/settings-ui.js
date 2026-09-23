@@ -143,7 +143,7 @@ const CollegiateSettingsUI = (() => {
     const gear = document.createElement("button");
     gear.type = "button";
     gear.className = "gear";
-    gear.setAttribute("aria-label", "Collegiate sign-in settings");
+    gear.setAttribute("aria-label", "CSNY sign-in settings");
     gear.innerHTML = `${gearIconSvg()}<span class="gear-label">Settings</span>`;
     gear.addEventListener("click", (e) => {
       e.stopPropagation();
@@ -267,7 +267,7 @@ const CollegiateSettingsUI = (() => {
       <div class="panel" role="dialog" aria-modal="true" aria-labelledby="cas-title">
         <form class="panel-form" novalidate>
           <div class="panel-inner">
-            <h2 id="cas-title">Collegiate Auto Sign-In</h2>
+            <h2 id="cas-title">CSNY Auto Sign-in [Userscript Ver]</h2>
             <p class="welcome" hidden>Set your school email once; we'll fill login steps for you.</p>
             <p class="hint">
               Blackbaud (<code>collegiateschool.myschoolapp.com</code>): fills your email and optionally
