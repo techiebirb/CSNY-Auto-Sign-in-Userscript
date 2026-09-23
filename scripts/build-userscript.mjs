@@ -12,7 +12,7 @@ const REPO_URL = "https://github.com/techiebirb/collegiateAutoSignIn";
 const HEADER = `// ==UserScript==
 // @name         Collegiate Auto Sign-In
 // @namespace    ${REPO_URL}
-// @version      2.0.2
+// @version      2.0.3
 // @description  Auto-fills Collegiate Blackbaud and CSNY OneLogin sign-in steps.
 // @author       techiebirb
 // @homepageURL  ${REPO_URL}
@@ -21,6 +21,8 @@ const HEADER = `// ==UserScript==
 // @downloadURL  ${SCRIPT_URL}
 // @match        https://collegiateschool.myschoolapp.com/*
 // @match        https://csny.onelogin.com/*
+// @grant        GM.getValue
+// @grant        GM.setValue
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @run-at       document-idle

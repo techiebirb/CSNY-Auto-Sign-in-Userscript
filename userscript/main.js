@@ -306,7 +306,8 @@ function onSettingsSaved(settings) {
   setTimeout(() => runAutomationAfterSave(settings), 150);
 }
 
-function bootstrap() {
+async function bootstrap() {
+  await CollegiateStorage.init();
   currentSettings = CollegiateStorage.loadSettings();
   CollegiateSettingsUI.init({ onSave: onSettingsSaved });
   if (currentSettings.email?.trim()) {

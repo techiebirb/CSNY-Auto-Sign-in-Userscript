@@ -8,12 +8,15 @@ After you install it once on a device, open a supported login page and use **Set
 
 ## What you need
 
-| Device | Browser | Add-on app |
-|--------|---------|------------|
-| iPhone / iPad | Safari | [Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887) (App Store) |
-| Mac | Safari | [Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887) (Mac App Store) |
-| Mac or Windows | Chrome, Edge, or Firefox | [Tampermonkey](https://www.tampermonkey.net/) |
-| Android phone or tablet | **Microsoft Edge** or **Firefox** (not Chrome) | Tampermonkey (inside that browser) |
+Click your row to jump to **install** steps (or use the **update** link if you already have the script).
+
+| Device | Browser | Add-on app | Guides |
+|--------|---------|------------|--------|
+| iPhone / iPad | Safari | [Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887) (App Store) | [Install](#install-iphone-ipad) · [Update](#update-userscripts) |
+| Mac | Safari | [Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887) (Mac App Store) | [Install](#install-mac-safari) · [Update](#update-userscripts) |
+| Mac or Windows | Chrome, Edge, or Firefox | [Tampermonkey](https://www.tampermonkey.net/) | [Install](#install-desktop-tampermonkey) · [Update](#update-tampermonkey) |
+| Android phone or tablet | **Microsoft Edge** (not Chrome) | Tampermonkey (inside Edge) | [Install](#install-android-edge) · [Update](#update-tampermonkey) |
+| Android phone or tablet | **Firefox** (not Chrome) | Tampermonkey (inside Firefox) | [Install](#install-android-firefox) · [Update](#update-tampermonkey) |
 
 > **Android:** The usual **Chrome** app on Android cannot run this. Open school links in **Edge** or **Firefox** after you install Tampermonkey there.
 
@@ -23,7 +26,7 @@ Open this link in the browser where you installed Userscripts or Tampermonkey. W
 
 **[Install Collegiate Auto Sign-In](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)**
 
-You can also download [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js) from this repo and import that file in Userscripts or Tampermonkey.
+You can also download [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js) from this repo and import that file in Userscripts or Tampermonkey. If you use a downloaded file only, see [Update from a downloaded file](#update-imported-file) when a new version is published.
 
 ## Supported sites
 
@@ -36,16 +39,30 @@ OneLogin uses the password you save in **Settings**. Blackbaud password entry is
 
 ## Install
 
-Pick the section that matches your device.
+Pick the link that matches your device (same as the table above):
 
-### iPhone / iPad (Safari)
+- [iPhone / iPad (Safari)](#install-iphone-ipad)
+- [Mac (Safari)](#install-mac-safari)
+- [Mac or Windows (Chrome, Edge, or Firefox)](#install-desktop-tampermonkey)
+- [Android (Microsoft Edge)](#install-android-edge)
+- [Android (Firefox)](#install-android-firefox)
+
+### <a id="install-iphone-ipad"></a>iPhone / iPad (Safari)
 
 1. Install **[Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887)** from the App Store.
 2. On your device, open **Settings → Safari → Extensions** and turn **Userscripts** on. Allow it on Collegiate sites when Safari asks.
-3. Open the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)** in Safari and add the script in Userscripts, or import the downloaded `.user.js` file (AirDrop, Files, etc.).
+3. **Add the script from the install link:**
+   1. In **Safari**, tap the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)**. The page may look blank or show a lot of text—that’s normal; you’re looking at the script file.
+   2. **Stay in Safari** on that page. Open **Userscripts** from Safari’s toolbar: tap the **puzzle piece** (extensions) next to the address bar, then tap **Userscripts**. A panel slides up from the bottom. (If you don’t see **Userscripts**, tap **Manage Extensions** and turn it on for this site.)
+   3. In that panel, tap **Userscript detected: tap to install**.
+   4. Scroll down if you need to, then tap **Install**.
+   5. When you’re finished, tap the **checkmark** at the top of the panel to close Userscripts and return to Safari.
+
+   *Optional:* Instead of the link, you can import [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js) from the Files app inside Userscripts (AirDrop, iCloud, etc.).
+
 4. In Safari, open a Collegiate login page from the table above. Tap **Settings**, enter your school email (and OneLogin password if you use OneLogin), then tap **Save**. You should see **Settings saved.**
 
-### Mac (Safari)
+### <a id="install-mac-safari"></a>Mac (Safari)
 
 1. Install **[Userscripts](https://apps.apple.com/us/app/userscripts/id1463298887)** from the Mac App Store.
 2. Open **Safari → Settings → Extensions**, enable **Userscripts**, and allow it on `collegiateschool.myschoolapp.com` and `csny.onelogin.com` when prompted.
@@ -54,13 +71,13 @@ Pick the section that matches your device.
 
 The Userscripts *file* can sync between Apple devices if you use its sync options; your **Settings** email and password are still stored separately on each device and browser.
 
-### Mac or Windows (Chrome, Edge, or Firefox)
+### <a id="install-desktop-tampermonkey"></a>Mac or Windows (Chrome, Edge, or Firefox)
 
 1. Install **[Tampermonkey](https://www.tampermonkey.net/)** for your browser (Chrome Web Store, Edge Add-ons, or Firefox Add-ons).
 2. Open the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)**. Confirm when Tampermonkey asks to install. Or use **Dashboard → Utilities → Import** with the downloaded file.
 3. Open a login URL from the table above. Click **Settings**, fill in your details, and click **Save**. You should see **Settings saved.**
 
-### Android (Microsoft Edge)
+### <a id="install-android-edge"></a>Android (Microsoft Edge)
 
 1. Install **Microsoft Edge** from the Play Store if you do not already use it.
 2. In Edge, open the menu → **Extensions** → install and enable **Tampermonkey** (follow the in-app prompts).
@@ -69,7 +86,7 @@ The Userscripts *file* can sync between Apple devices if you use its sync option
 
 If you usually open school email links in Chrome, copy the link and open it in Edge instead—this helper does not run in Chrome on Android.
 
-### Android (Firefox)
+### <a id="install-android-firefox"></a>Android (Firefox)
 
 1. Install **Firefox** from the Play Store and keep it updated (Tampermonkey is available in Firefox’s add-ons on recent versions).
 2. In Firefox, open the menu → **Add-ons** → install **Tampermonkey**.
@@ -109,9 +126,67 @@ Your email and OneLogin password are saved **only on your device** through Users
 
 ## Updates
 
-- **Tampermonkey:** If you installed from the install link above, turn on **Check for updates** in Tampermonkey settings to get new versions automatically.
-- **Userscripts (iPhone, iPad, Mac):** You may need to refresh or re-import the script when a new version is published on GitHub.
-- **Imported file only:** If you installed from a downloaded `.user.js` file, download or import again when the repo updates.
+When a new version is published on GitHub, pick the guide that matches how you installed the script:
+
+| How you installed | Update guide |
+|-------------------|--------------|
+| [Tampermonkey](#update-tampermonkey) on Mac, Windows, or Android (Edge / Firefox) | Automatic or manual check in Tampermonkey |
+| [Userscripts](#update-userscripts) on iPhone, iPad, or Mac Safari | Refresh or reinstall from the install link |
+| [Downloaded `.user.js` file](#update-imported-file) only (no install link) | Download and import again |
+
+Your **Settings** (email and OneLogin password) usually stay on the device after an update. If something looks wrong after updating, open **Settings** on a login page, confirm your details, tap or click **Save**, and reload the page.
+
+### <a id="update-tampermonkey"></a>Update with Tampermonkey (Chrome, Edge, Firefox; Android Edge / Firefox)
+
+Use this if you installed from the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)** in Tampermonkey.
+
+**Turn on automatic updates (recommended, once per browser):**
+
+1. Open Tampermonkey’s menu (browser toolbar icon) → **Dashboard** (or **Settings**).
+2. Open the **Settings** tab.
+3. Under **Security & updates** (wording may vary by browser), enable **Check for updates** (and **Notify on updates** if you want a prompt).
+4. Save if asked. Tampermonkey will periodically fetch the latest script from GitHub using the update URL baked into the script.
+
+**Update right now (manual):**
+
+1. Open Tampermonkey → **Dashboard**.
+2. Find **Collegiate Auto Sign-In** in the list.
+3. Use **Check for userscript updates** from the Dashboard menu or toolbar, or open the script and look for an update notice—then confirm **Update** / **Install**.
+4. Reload any open Collegiate login tabs.
+
+**If no update appears but you know a new version was released:**
+
+1. In the same browser, open the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)** again.
+2. When Tampermonkey asks, choose **Reinstall** or **Update** (wording varies). That replaces the script with the current file on GitHub.
+3. Reload the login page.
+
+### <a id="update-userscripts"></a>Update with Userscripts (iPhone, iPad, Mac Safari)
+
+Userscripts does not use Tampermonkey’s automatic update checker. Refresh the script when the repo releases a new version (or when login pages stop behaving as expected).
+
+**From the install link (same as first install):**
+
+1. In **Safari**, open the **[install link](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js)**.
+2. Open **Userscripts** from Safari’s extensions menu (puzzle piece → **Userscripts**).
+3. If you see **Userscript detected** or an update prompt, follow it to **Install** / replace the existing script. If you already have the script, open the **Scripts** list in Userscripts, select **Collegiate Auto Sign-In**, and use the option to update or reinstall from the open tab (exact labels depend on your Userscripts version).
+4. Close Userscripts (checkmark on iPhone/iPad) and reload the Collegiate login page in Safari.
+
+**From a file (AirDrop, iCloud, download):**
+
+1. Download the latest [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js) from this repo ( **Code → Download ZIP** or open the raw file and save it).
+2. In Userscripts, import the new file and replace the old **Collegiate Auto Sign-In** entry when prompted.
+3. Reload the login page in Safari.
+
+If you use Userscripts sync between Apple devices, updating the script on one device may sync the *script file*; **Settings** on each device are still separate—check **Settings** on the login page after an update if anything seems off.
+
+### <a id="update-imported-file"></a>Update from a downloaded file only
+
+Use this if you never used the online install link and only imported a copy of `collegiate-auto-sign-in.user.js`.
+
+1. Get the newest file from GitHub: open [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js) in this repo and download it, or clone/pull the repo if someone technical helps you.
+2. **Tampermonkey:** Dashboard → **Utilities** → **Import** (or drag the file onto the Dashboard). Choose to **overwrite** or remove the old script first if import creates a duplicate.
+3. **Userscripts:** Import the new file from the Files app or drag it into Userscripts on Mac, and replace the previous script when asked.
+4. Reload the Collegiate login page in the same browser you used for import.
 
 ## Troubleshooting
 
@@ -119,7 +194,7 @@ Your email and OneLogin password are saved **only on your device** through Users
 - **No Settings button:** On Safari, enable the extension for that website under **Safari → Settings → Extensions** (Mac) or **Settings → Safari → Extensions** (iPhone/iPad).
 - **Next or Continue stays gray briefly:** In **Settings**, increase **Delay before Next / Continue** (try 500–1000 milliseconds), save, and reload the login page.
 - **Changed settings:** Reload the login page after saving **Settings**.
-- **New version on GitHub:** Update or re-import the script in Userscripts or Tampermonkey, then reload the login page.
+- **New version on GitHub:** Follow [Updates](#updates) for your setup, then reload the login page.
 
 **Optional (someone technical helping you):** Open the browser’s developer console on the login page and look for messages starting with `[Collegiate Auto Sign-In]`.
 

@@ -213,15 +213,25 @@ const CollegiateSettingsUI = (() => {
     };
   }
 
-  function handleSave(e) {
+  async function handleSave(e) {
     if (e) e.preventDefault();
     const root = getFormEls();
     if (!root) return;
 
+    const payload = readPayloadFromForm(root);
     const active = shadow?.activeElement;
     if (active && typeof active.blur === "function") active.blur();
 
-    const result = CollegiateStorage.saveSettings(readPayloadFromForm(root));
+    let result;
+    try {
+      result = await CollegiateStorage.saveSettings(payload);
+    } catch (err) {
+      const message =
+        err && typeof err.message === "string" ? err.message : "Could not save settings.";
+      setStatus(message, false);
+      return;
+    }
+
     if (!result.ok) {
       setStatus(result.error, false);
       root.querySelector("#cas-email")?.focus();
@@ -317,7 +327,9 @@ const CollegiateSettingsUI = (() => {
 
     loadFormValues(CollegiateStorage.loadSettings());
     document.addEventListener("keydown", onKeydown, true);
-    backdrop.querySelector("#cas-email").focus();
+    const emailInput = backdrop.querySelector("#cas-email");
+    const coarsePointer = window.matchMedia("(pointer: coarse)").matches;
+    if (!coarsePointer) emailInput.focus();
   }
 
   function init({ onSave }) {

@@ -51,7 +51,7 @@ If Blackbaud or OneLogin changes their login page, edit [`config/sites.js`](conf
 The build injects a standard `==UserScript==` header, including:
 
 - `@match` for `collegiateschool.myschoolapp.com` and `csny.onelogin.com`
-- `@grant GM_getValue` / `GM_setValue` for settings storage
+- `@grant GM.getValue` / `GM.setValue` (Userscripts/Safari) and `@grant GM_getValue` / `GM_setValue` (Tampermonkey) for settings storage
 - `@updateURL` / `@downloadURL` pointing at the raw GitHub file on `main`
 
 Do not hand-edit the header in `collegiate-auto-sign-in.user.js`; change the build scripts and rebuild.
