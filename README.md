@@ -20,6 +20,8 @@ Click your row to jump to **install** steps (or use the **update** link if you a
 
 > **Android:** The usual **Chrome** app on Android cannot run this. Open school links in **Edge** or **Firefox** after you install Tampermonkey there.
 
+> **Quick path (if you already know how to install a userscript):** Open the [install link](#install-link) in Userscripts or Tampermonkey and confirm **Install** → open a [supported login page](#supported-sites) → **Settings** → **Save**.
+
 ## Install link
 
 Open this link in the browser where you installed Userscripts or Tampermonkey. When asked, confirm **Install** (or add/import the script):
