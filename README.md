@@ -2,7 +2,13 @@
 
 Userscript that automates early login steps for Collegiate Blackbaud portals and CSNY OneLogin. Settings live on the login page—tap **Settings** (bottom-right) on any supported site.
 
-**Install file:** [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js) (ready to import; no build required).
+**Repository:** [github.com/techiebirb/collegiateAutoSignIn](https://github.com/techiebirb/collegiateAutoSignIn)
+
+**Install URL (Tampermonkey / Userscripts):**
+
+`https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js`
+
+You can also download [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js) from this repo and import the file.
 
 ## Supported sites
 
@@ -19,14 +25,16 @@ Blackbaud password entry is still manual. OneLogin uses the password you save in
 
 1. Install **Userscripts** from the App Store.
 2. On your device, open **Settings → Safari → Extensions** and turn **Userscripts** on.
-3. Import [`collegiate-auto-sign-in.user.js`](collegiate-auto-sign-in.user.js) (AirDrop, Files, or your GitHub **Raw** link after you publish the repo).
+3. Import the [install URL](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js) or the `.user.js` file (AirDrop, Files).
 4. In Safari, open a Collegiate login page. Tap **Settings**, enter your school email (and OneLogin password if needed), then **Save**.
 
 ### Computer (Chrome, Edge, or Firefox)
 
 1. Install **Tampermonkey**.
-2. **Dashboard → Utilities → Import** (or create a new script and paste the file contents) and add `collegiate-auto-sign-in.user.js`.
+2. Install the script from the [install URL](https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js) (Tampermonkey prompt), or **Dashboard → Utilities → Import** with the downloaded file.
 3. Open a login URL. Click **Settings**, fill in your details, and **Save**.
+
+**Updates:** Tampermonkey can check for updates automatically when you install from the install URL above (enable **Check for updates** in Tampermonkey settings). Bump `@version` in the script and push to `main` to publish an update. **Userscripts on iPhone/iPad** usually still needs a manual refresh when a new version is published.
 
 **Set up once per device.** Settings are stored only in that browser’s script storage—they do not sync between your phone and laptop automatically.
 
@@ -64,7 +72,7 @@ Or, if Node is not installed:
 python3 scripts/build-userscript.py
 ```
 
-Then re-import or refresh the script in Tampermonkey or Userscripts.
+Commit the rebuilt `collegiate-auto-sign-in.user.js`, bump `@version` in `scripts/build-userscript.*`, and push to `main`. Tampermonkey users who installed from the install URL will get updates on check; others re-import manually.
 
 ## Customize selectors
 

@@ -5,12 +5,20 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
 
+const SCRIPT_URL =
+  "https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js";
+const REPO_URL = "https://github.com/techiebirb/collegiateAutoSignIn";
+
 const HEADER = `// ==UserScript==
 // @name         Collegiate Auto Sign-In
-// @namespace    https://github.com/collegiate-auto-sign-in
-// @version      2.0.1
+// @namespace    ${REPO_URL}
+// @version      2.0.2
 // @description  Auto-fills Collegiate Blackbaud and CSNY OneLogin sign-in steps.
-// @author       Collegiate Auto Sign-In
+// @author       techiebirb
+// @homepageURL  ${REPO_URL}
+// @supportURL   ${REPO_URL}
+// @updateURL    ${SCRIPT_URL}
+// @downloadURL  ${SCRIPT_URL}
 // @match        https://collegiateschool.myschoolapp.com/*
 // @match        https://csny.onelogin.com/*
 // @grant        GM_getValue

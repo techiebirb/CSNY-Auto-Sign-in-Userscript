@@ -1,9 +1,13 @@
 // ==UserScript==
 // @name         Collegiate Auto Sign-In
-// @namespace    https://github.com/collegiate-auto-sign-in
-// @version      2.0.1
+// @namespace    https://github.com/techiebirb/collegiateAutoSignIn
+// @version      2.0.2
 // @description  Auto-fills Collegiate Blackbaud and CSNY OneLogin sign-in steps.
-// @author       Collegiate Auto Sign-In
+// @author       techiebirb
+// @homepageURL  https://github.com/techiebirb/collegiateAutoSignIn
+// @supportURL   https://github.com/techiebirb/collegiateAutoSignIn
+// @updateURL    https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js
+// @downloadURL  https://raw.githubusercontent.com/techiebirb/collegiateAutoSignIn/main/collegiate-auto-sign-in.user.js
 // @match        https://collegiateschool.myschoolapp.com/*
 // @match        https://csny.onelogin.com/*
 // @grant        GM_getValue
